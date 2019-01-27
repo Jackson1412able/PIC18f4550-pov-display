@@ -16,5 +16,5 @@ by replacing the blades of the fan.
 ![asasas](https://user-images.githubusercontent.com/46261099/51802895-7af12a00-2289-11e9-9e9e-527e4433b611.jpg)
 ![adadad](https://user-images.githubusercontent.com/46261099/51802896-7b89c080-2289-11e9-941c-ca028e4b9258.jpg)
 
-
-If you have any questions regarding this project, feel free to email me at: jackson1412able@gmail.com
+ [Link to completed project video](https://www.youtube.com/watch?v=Z9HqFUcXfkU&feature=youtu.be)<br/>
+ If you have any questions regarding this project, feel free to email me at: jackson1412able@gmail.com
