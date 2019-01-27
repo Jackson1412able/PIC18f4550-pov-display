@@ -1,32 +1,32 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-//													                                                                            //
-//  THE ENTIRE CIRCUIT IS MOUNTED ON A PIECE OF WOOD, THE LED ARRAY WITH SOME EXTRA WOOD ARE 		        //
-//  PLACED AT A SIDE AND EVERYTHING ELSE IS PLACED AT THE OTHER SIDE. AN LED ARRAY CONSISTS		          //
-//  OF 8 LEDS, WHICH ARE CONNECTED TO THE 8 PINS OF PORTB OF PIC18F4550. THE WOOD AND CIRCUIT ARE	      //
-//  THEN MOUNTED ON THE SHAFT OF AN ELECTRIC MOTOR FROM AN ELECTRIC FAN. AS THE CIRCUIT			            //
-//  ROTATES, THE LED ARRAY CREATES INSTANCES OF LED ARRAY PATTERNS, 1 CHARACTER IS THEN MADE UP		      //
-//  OF FIVE INSTANCES OF LED ARRAY PATTERNS. SEE ILLUSTRATION BELOW TO GET A BETTER INSIGHT OF		      //
-//  HOW IT WORKS:											                                                                  //
-//													                                                                            //
-//                          FOR EXAMPLE, TO DISPLAY A "H" CHARACTER:								                    //
-//  													                                                                          //
-//													                                                                            //
-//                  PORT B PINS												                                                  //
-//                    TO 8 LEDS												                                                  //
-//                                                      PORTB OUTPUT							                      //
-//                  EDGE OF WOOD                  {0x7f,0x08,0x08,0x08,0x7f}						                //
-//													                                                                            //
-//                    RB0  O			                      X  O  O  O  X							                      //
-//                    RB1  O			                      X  O  O  O  X							                      //
-//                    RB2  O			                      X  O  O  O  X							                      //
-//                    RB3  O       ----------->         X  X  X  X  X							                      //
-//                    RB4  O	      ROTATE IN           X  O  O  O  X							                      //
-//                    RB5  O	      CLOCKWISE           X  O  O  O  X							                      //
-//                    RB6  O	      DIRECTION           X  O  O  O  X							                      //
-//                    RB7  O			                      O  O  O  O  O							                      //
-//													                                                                            //
-//                  MOTOR SHAFT                    *X - LED ON, O - LED OFF						                  //
-//													                                                                            //
+//													//
+//  THE ENTIRE CIRCUIT IS MOUNTED ON A PIECE OF WOOD, THE LED ARRAY WITH SOME EXTRA WOOD ARE 		//
+//  PLACED AT A SIDE AND EVERYTHING ELSE IS PLACED AT THE OTHER SIDE. AN LED ARRAY CONSISTS		//
+//  OF 8 LEDS, WHICH ARE CONNECTED TO THE 8 PINS OF PORTB OF PIC18F4550. THE WOOD AND CIRCUIT ARE	//
+//  THEN MOUNTED ON THE SHAFT OF AN ELECTRIC MOTOR FROM AN ELECTRIC FAN. AS THE CIRCUIT			//
+//  ROTATES, THE LED ARRAY CREATES INSTANCES OF LED ARRAY PATTERNS, 1 CHARACTER IS THEN MADE UP		//
+//  OF FIVE INSTANCES OF LED ARRAY PATTERNS. SEE ILLUSTRATION BELOW TO GET A BETTER INSIGHT OF		//
+//  HOW IT WORKS:											//
+//											                //
+//                          FOR EXAMPLE, TO DISPLAY A "H" CHARACTER:	                                //
+//  									                                //
+//									                                //
+//                  PORT B PINS							                        //
+//                    TO 8 LEDS								                //
+//                                                      PORTB OUTPUT			                //
+//                  EDGE OF WOOD                  {0x7f,0x08,0x08,0x08,0x7f}		                //
+//										                        //
+//                    RB0  O			        X  O  O  O  X		                        //
+//                    RB1  O			        X  O  O  O  X		                        //
+//                    RB2  O			        X  O  O  O  X		                        //
+//                    RB3  O       ----------->         X  X  X  X  X		                        //
+//                    RB4  O	      ROTATE IN         X  O  O  O  X		                        //
+//                    RB5  O	      CLOCKWISE         X  O  O  O  X			                //
+//                    RB6  O	      DIRECTION         X  O  O  O  X			                //
+//                    RB7  O			        O  O  O  O  O			                //
+//										                        //
+//                  MOTOR SHAFT                    *X - LED ON, O - LED OFF		                //
+//										                        //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <18F4550.h>
